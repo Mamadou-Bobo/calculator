@@ -1,0 +1,93 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #202c38;
+}
+
+.container{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+ 
+    width: 300px;
+    height: 450px;
+    border-radius: 20px;
+
+    background-color: #2C3E50;
+}
+
+.content{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    margin-top: 15%;
+
+    
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 10px;
+    row-gap: 8px;
+} 
+
+.content input{
+
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    outline: none;
+    background-color: #2C3E50;
+    color: #ffffff;
+    border: 1px solid #2C3E50;
+    box-shadow: 1px 1px 12px #38526bbe;
+    border-radius: 5px;
+    font-size: 18px;
+
+    transition: .1s;
+}
+
+.content input:active{
+    background-color: #3498dbb4;
+}
+
+.screen{
+    width: 83%;
+    height: 30px;
+    margin: 9% 9% 9%;
+    color: #fff;
+    font-size: 30px;
+}
+
+.screen input{
+    float: right;
+    text-align: right;
+    padding: 10px;
+    width: 230px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 30px;
+    color: #fff;
+}
+
+
+.item{
+    grid-column-end: span 2;
+}
+
+.item input {
+    width: 100%;
+}
+
+.first input{
+    background-color: #8E8E93;
+    color: #000;
+}
+
+.last input{
+    background-color: #c26d12;
+    color: #fff;
+}
